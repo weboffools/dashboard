@@ -3,33 +3,49 @@
   padding: 0;
 }
 
-html {
-  box-sizing: border-box;
-  font-family: 'Lato', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+:root {
+  /* Tailwind color palette "Indigo" @ "https://tailwindcss.com/docs/customizing-colors" */
+  --base-color-50: #eef2ff;
+  --base-color-100: #e0e7ff;
+  --base-color-200: #c7d2fe;
+  --base-color-300: #a5b4fc;
+  --base-color-400: #818cf8;
+  --base-color-500: #6366f1;
+  --base-color-600: #4f46e5;
+  --base-color-700: #4338ca;
+  --base-color-800: #3730a3;
+  --base-color-900: #312e81;
+  --base-color-950: #1e1b4b;
 }
 
-body {
-  height: 100vh;
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400&display=swap");
+
+html {
+  box-sizing: border-box;
+  font-family: "Lato", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .container {
   display: grid;
-  grid-template: 1fr 4fr / 1fr 3fr;
-
+  height: 100vh;
+  grid-template: minmax(75px, 1fr) 4fr / minmax(150px, 1fr) 3fr;
 }
 
 .header {
+  background-color: peachpuff;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
 }
 
 .main {
+  background-color: burlywood;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
 
 .sidebar {
+  background-color: aliceblue;
   grid-column: 1 / 2;
   grid-row: 1 / 3;
 }
-
