@@ -29,23 +29,23 @@ html {
 .container {
   display: grid;
   height: 100vh;
-  grid-template: minmax(75px, 1fr) 4fr / minmax(150px, 1fr) 3fr;
+  grid-template: minmax(75px, 1fr) 4fr / minmax(150px, 1fr) 4fr;
 }
 
 .header {
-  background-color: peachpuff;
+  background-color: var(--base-color-100);
   grid-column: 2 / 3;
   grid-row: 1 / 2;
 }
 
 .main {
-  background-color: burlywood;
+  background-color: var(--base-color-200);
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
 
 .sidebar {
-  background-color: aliceblue;
+  background-color: var(--base-color-400);
   grid-column: 1 / 2;
   grid-row: 1 / 3;
 }
