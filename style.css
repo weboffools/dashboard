@@ -38,10 +38,55 @@ a {
 }
 
 .main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
 
+.left-col {
+  display: grid;
+  grid-column: 1 / 2;
+}
+
+.right-col {
+  display: grid;
+  grid-column: 2 / 3;
+}
+
+.projects-left {
+  display: grid;
+  grid-template-rows: 50px 1fr 1fr 1fr;
+  grid-column: 1 / 2;
+
+}
+
+.projects-right {
+  display: grid;
+  grid-template-rows: 50px 1fr 1fr 1fr;
+  grid-column: 2 / 3;
+
+}
+
+.announcements {
+  display: grid;
+  grid-template-rows: 50px 1fr;
+}
+
+.trending {
+  display: grid;
+  grid-template-rows: 50px 1fr;
+}
+
+.announce-list {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.trend-list {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
 .header {
   display: grid;
   background-color: white;
@@ -74,7 +119,7 @@ a {
 }
 
 .notify {
-  grid-column: 2 / 3; 
+  grid-column: 2 / 3;
 }
 
 .user-name {
@@ -133,7 +178,7 @@ button {
 }
 
 input {
-  appearance: none; 
+  appearance: none;
   justify-self: left;
   border: none;
   border-radius: 10px;
@@ -148,8 +193,6 @@ input:focus-visible {
   outline: var(--base-color-500) solid 2px;
   background-color: var(--base-color-50);
 }
-
-
 
 .sidebar {
   display: grid;
@@ -182,7 +225,6 @@ input:focus-visible {
   grid-template-columns: 1fr 2fr;
 }
 
-
 .logo-title {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -208,4 +250,3 @@ input:focus-visible {
   display: grid;
   align-items: center;
 }
-
