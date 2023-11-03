@@ -32,7 +32,6 @@ a {
 
 .container {
   display: grid;
-  height: 100vh;
   grid-template: minmax(150px, 1fr) 4fr / minmax(200px, 1fr) 4fr;
   background-color: var(--base-color-200);
 }
@@ -76,9 +75,23 @@ a {
 
 .project-card {
   display: grid;
+  grid-template-rows: 3fr 1fr;
   background-color: white;
-  box-shadow: -10px 0px 0px red;
+  box-shadow: inset 10px 0px red;
   border-radius: 7px;
+  justify-items: center;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.card-icons {
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.icons svg {
+  width: clamp(1rem, 3vh, 3rem);
 }
 
 .announcements {
