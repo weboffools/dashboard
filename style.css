@@ -37,9 +37,41 @@ a {
 }
 
 .header {
+  display: grid;
   background-color: var(--base-color-100);
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.header svg {
+  fill: var(--base-color-950);
+  width: clamp(1rem, 3vh, 3rem);
+  justify-self: right;
+}
+
+.search {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+  gap: 20px;
+}
+
+input {
+  appearance: none; 
+  justify-self: left;
+  border: 2px solid var(--base-color-800);
+  border-radius: 10px;
+  background-color: var(--base-color-50);
+  width: max(400px, 50%);
+  height: 30px;
+  font-size: 1rem;
+  padding-left: 5px;
+}
+
+input:focus-visible {
+  outline: var(--base-color-500) solid 2px;
 }
 
 .main {
