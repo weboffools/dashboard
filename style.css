@@ -34,15 +34,22 @@ a {
   display: grid;
   height: 100vh;
   grid-template: minmax(150px, 1fr) 4fr / minmax(200px, 1fr) 4fr;
+  background-color: var(--base-color-200);
+}
+
+.main {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 }
 
 .header {
   display: grid;
-  background-color: var(--base-color-50);
+  background-color: white;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   grid-template-columns: 2fr 1.5fr;
   grid-template-rows: 1fr 1fr;
+  box-shadow: 0px 3px 2px var(--base-color-400);
 }
 
 .header svg {
@@ -112,7 +119,7 @@ button {
   background-color: var(--base-color-400);
   border-radius: 20px;
   border: none;
-  color: var(--base-color-50);
+  color: white;
   font-weight: 600;
   font-size: 1rem;
   padding: 10px 25px;
@@ -130,7 +137,7 @@ input {
   justify-self: left;
   border: none;
   border-radius: 10px;
-  background-color: hsl(90deg, 50%, 75%);
+  background-color: hsl(90deg, 0%, 90%);
   width: max(600px, 50%);
   height: 30px;
   font-size: 1rem;
@@ -142,11 +149,7 @@ input:focus-visible {
   background-color: var(--base-color-50);
 }
 
-.main {
-  background-color: var(--base-color-200);
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-}
+
 
 .sidebar {
   display: grid;
@@ -167,11 +170,11 @@ input:focus-visible {
 
 .sidebar ul svg {
   width: clamp(1rem, 2vw, 2rem);
-  fill: var(--base-color-100);
+  fill: white;
 }
 
 .sidebar a {
-  color: var(--base-color-100);
+  color: white;
 }
 
 .sidebar ul li {
