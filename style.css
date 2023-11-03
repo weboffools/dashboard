@@ -38,7 +38,7 @@ a {
 
 .header {
   display: grid;
-  background-color: var(--base-color-100);
+  background-color: var(--base-color-50);
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   grid-template-columns: 2fr 1.5fr;
@@ -128,9 +128,9 @@ button {
 input {
   appearance: none; 
   justify-self: left;
-  border: 2px solid var(--base-color-800);
+  border: none;
   border-radius: 10px;
-  background-color: var(--base-color-50);
+  background-color: hsl(90deg, 50%, 75%);
   width: max(600px, 50%);
   height: 30px;
   font-size: 1rem;
@@ -139,6 +139,7 @@ input {
 
 input:focus-visible {
   outline: var(--base-color-500) solid 2px;
+  background-color: var(--base-color-50);
 }
 
 .main {
