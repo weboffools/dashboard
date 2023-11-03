@@ -52,6 +52,25 @@ a {
   justify-self: right;
 }
 
+.user-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-self: center;
+  gap: 15px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.user-area img {
+  width: 50px;
+}
+
+.greeting img {
+  width: 75px;
+}
+
+
 .buttons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
