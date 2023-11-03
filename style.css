@@ -18,7 +18,7 @@
   --base-color-950: #1e1b4b;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,600;0,700;1,400&display=swap");
 
 html {
   box-sizing: border-box;
@@ -43,12 +43,31 @@ a {
   grid-row: 1 / 2;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
+  padding: 10px;
 }
 
 .header svg {
   fill: var(--base-color-950);
   width: clamp(1rem, 3vh, 3rem);
   justify-self: right;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+
+button {
+  background-color: var(--base-color-400);
+  border-radius: 20px;
+  border: none;
+  color: var(--base-color-50);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 25px;
 }
 
 .search {
