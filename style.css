@@ -42,50 +42,69 @@ a {
   grid-template-columns: 2fr 1fr;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+  padding: 10px 20px;
+  gap: 20px;
 }
 
 .left-col {
   display: grid;
   grid-column: 1 / 2;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 .right-col {
   display: grid;
   grid-column: 2 / 3;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
 }
 
 .projects-left {
   display: grid;
-  grid-template-rows: 50px 1fr 1fr 1fr;
+  grid-template-rows: 30px 1fr 1fr 1fr;
   grid-column: 1 / 2;
-
+  gap: 20px;
 }
 
 .projects-right {
   display: grid;
-  grid-template-rows: 50px 1fr 1fr 1fr;
+  grid-template-rows: 30px 1fr 1fr 1fr;
   grid-column: 2 / 3;
+  gap: 20px;
+}
 
+.project-card {
+  display: grid;
+  background-color: white;
+  box-shadow: -10px 0px 0px red;
+  border-radius: 7px;
 }
 
 .announcements {
   display: grid;
-  grid-template-rows: 50px 1fr;
+  grid-template-rows: 30px 1fr;
+  gap: 20px;
 }
 
 .trending {
   display: grid;
-  grid-template-rows: 50px 1fr;
+  grid-template-rows: 30px 1fr;
+  gap: 20px;
 }
 
 .announce-list {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
+  background-color: white;
+  border-radius: 7px;
 }
 
 .trend-list {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  border-radius: 7px;
+  background-color: white;
 }
 .header {
   display: grid;
