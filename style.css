@@ -38,7 +38,7 @@ a {
 
 .main {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   padding: 10px 20px;
@@ -77,18 +77,30 @@ a {
   display: grid;
   grid-template-rows: 3fr 1fr;
   background-color: white;
-  box-shadow: inset 10px 0px red;
-  border-radius: 7px;
+  border-left: 10px solid var(--base-color-900);
+  border-radius: 5px;
   justify-items: center;
   align-items: center;
-  padding-left: 20px;
+  padding: 10px;
+}
+
+.project-card:hover {
+  outline: 3px outset var(--base-color-700);
+
 }
 
 .card-icons {
 
   display: grid;
+  width: 80%;
   grid-template-columns: repeat(2, 1fr);
 }
+
+.icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 
 .icons svg {
   width: clamp(1rem, 3vh, 3rem);
@@ -108,9 +120,13 @@ a {
 
 .announce-list {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  font-size: 0.75rem;
+  grid-template-rows: 1fr 5px 1fr 5px 1fr;
   background-color: white;
   border-radius: 7px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
 
 .trend-list {
@@ -118,7 +134,23 @@ a {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   border-radius: 7px;
   background-color: white;
+  padding: 15px;
 }
+
+.trend-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.trend-item img {
+  width: 3vw;
+}
+
+.trend-item p {
+  color: grey;
+  font-size: 1rem;
+}
+
 .header {
   display: grid;
   background-color: white;
@@ -187,9 +219,9 @@ a {
 .buttons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
   align-items: center;
   justify-items: center;
+  gap: 20px;
 }
 
 button {
